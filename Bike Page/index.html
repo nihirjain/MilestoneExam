@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornako</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <link rel="stylesheet" href="/assets/index-c9e1ac24.css">
+</head>
+<body>
+    <div class="border-b-2">
+    <div class=" container mx-auto py-5 flex justify-between px-4 items-center">
+        <div>
+            <img src="data:image/png;base64,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" alt="logo">
+        </div>
+        <div>
+            <ul class="flex space-x-10 max-md:hidden">
+                <li class="uppercase flex items-center space-x-2 text-[#42454a] font-semibold"><a href="#">Products</a><span><i class="fa-sharp fa-solid fa-chevron-down text-xs "></i></span></li>
+                <li class="uppercase text-[#42454a] font-semibold"><a href="#">Gallery</a></li>
+                <li class="uppercase text-[#42454a] font-semibold"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="space-x-3 max-md:hidden">
+            <button class="px-7 py-4 shadow-lg uppercase text-[#42454a] rounded-md">Log in</button>
+            <button class="px-7 shadow-lg py-4 bg-[#42454a] text-white rounded-md  uppercase">Sign Up</button>
+        </div>
+        <div class="md:hidden">
+            <i class="fa-solid fa-bars md:text-3xl text-2xl font-extrabold "></i>
+        </div>
+    </div>
+</div>
+<main>
+    <section id="main">
+            <div class="container py-4 px-4">
+                <div class="flex flex-col md:flex-row md:justify-between w-full md:items-center">
+                    <div class="flex flex-col space-y-5 md:w-[40%] md:space-y-10 ">
+                        <div class="flex flex-col space-y-2 md:pb-14">
+                            <div class="text-5xl text-[#43454a] md:text-7xl ">LETS RIDE</div>
+                            <div class="text-5xl font-bold text-[#42454a] md:text-7xl">THE FUTURE.</div>
+                        </div>
+                        <div class="w-[240px] border-2 border-[#42454a] h-0"></div>
+                        <div class="font-semibold text-[#42454a]">
+                            Simple and sleek design with users <br> in mind
+                        </div>
+                        <div class="flex items-center space-x-10">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-[#42454a] flex items-center justify-center text-white"><i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                                <div class="text-[#42454a] font-bold text-sm">Buy Now</div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-sm font-semibold text-[#42454a]">Watch Our <br> video how <br> it works</div>
+                                <div><img class="w-14" src="data:image/png;base64,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" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 md:w-[60%]">
+                        <div><img class="max-w-[100%]" src="/assets/header image-e9b22680.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+<div class="w-full flex justify-end container px-4 items-center pb-5 space-x-5">
+    <div><img class="w-20 md:w-[100px]" src="/assets/01-d91c850a.png" alt=""></div>
+    <div class="flex items-center">
+        <div class="w-10 h-10 font-semibold text-sm text-[#42454a] border-2 border-[#bcbdc0] rounded-l-full flex items-center justify-center"><i class="fa-solid fa-chevron-left"></i> </div>
+        <div class="w-10 h-10 border-2 text-[#42454a] border-[#bcbdc0] rounded-r-full flex items-center justify-center  text-sm font-semibold"><i class="fa-solid fa-chevron-right "></i></div>
+    </div>
+</div>
+<div class="w-full flex flex-col container px-4 justify-center space-y-5 md:space-y-0 md:flex-row md:justify-between md:items-center pb-10 ">
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">150</span>lbs</div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Net Weight </div>
+    </div>
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">26</span>mph</div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Top Speed</div>
+    </div>
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">38</span>miles</div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Max Range</div>
+    </div>
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">89</span>nm</div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Max Torques</div>
+    </div>
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">22%</span>slope</div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Hill Climbing</div>
+    </div>
+    <div class="px-7 py-3  flex flex-col justify-center items-center space-y-2 shadow-xl">
+        <div class="text-lg font-bold text-[#42454a]"><span class="text-3xl text-[#42454a] pr-2 font-extrabold">2<span class="font-lg">x</span></span></div>
+        <div class="text-xl font-medium text-[#42454a] md:text-xs">Hydralic Disc Brakes</div>
+    </div>
+</div>
+<div class="w-full flex flex-col container px-4 pt-5">
+    <div class="flex flex-col items-center space-y-3 md:space-y-6">
+        <div class="text-2xl font-bold text-[#42454a] md:text-4xl">Product Information</div>
+        <div class="text-xs font-medium text-gray-400 md:text-lg">Our Scooter has following design and technology features:</div>
+    </div>
+    <div class="flex flex-col md:w-full md:flex-row md:justify-between md:pt-5  ">
+        <div class="md:w-1/2"><img src="/assets/product information image-4f7d8188.png" alt=""></div>
+        <div class="flex flex-col justify-center space-y-4   ">
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-semibold">Lightweight aircraft grade aluminium frame</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-xs md:text-md text-[#42454a] font-bold">Car grade lithium battery</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-xs md:text-md text-[#42454a] font-bold">Self balanced</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Plug n play</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Quick release adapter</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">RFID key card</div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="w-full flex flex-col container px-4 pt-5 justify-center items-center">
+    <div>
+        <img src="/assets/high efficiency motor-0aebc8e8.png" alt="">
+    </div>
+</div>
+<div class="w-full flex flex-col container px-4 pt-5">
+    <div class="flex flex-col items-center space-y-3 md:space-y-6">
+        <div class="text-2xl font-bold text-[#42454a] md:text-4xl">Multiple Assesories</div>
+        <div class="text-sm font-medium text-gray-400 md:text-lg">There are multiple modes for your multiple needs.</div>
+    </div>
+    <div class="flex flex-col  pt-10 pb-10 md:flex-row md:items-center md:justify-between">
+        <div class="flex flex-col space-y-5">
+            <div class="text-3xl font-bold text-[#42454a]">Golf Bag Rock</div>
+            <div class="flex items-center space-x-2">
+                <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+                <div class="text-sm md:text-md text-[#42454a] font-bold">Material : Aluminium alloy</div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+                <div class="text-sm md:text-md text-[#42454a] font-bold">RFID key card</div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+                <div class="text-sm md:text-md text-[#42454a] font-bold">Capacity : 45lbs</div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+                <div class="text-sm md:text-md text-[#42454a] font-bold">Ease: steady & adjustable</div>
+            </div>
+        </div>
+        <div class="pt-10">
+            <img class="w-full" src="/assets/golf bag rock-d9fa1173.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="w-full flex flex-col md:flex-row md:justify-between md:items-center container px-4 pt-10">
+    <div class="">
+        <img src="/assets/shopping rack-91a88ef5.png" alt="">
+    </div>
+    <div class="flex flex-col space-y-5 pt-5">
+        <div class="text-3xl font-bold text-[#42454a]">Shooping Rack</div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Material : Aluminium alloy</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Color : Black</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Capacity : 45lbs</div>
+        </div>
+        <div class="flex items-center space-x-2">
+            <div><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgBzVpdUiJJEM6sRmPdJ/cGPOwB9ATbIBjobsTgCUZPIHMC4XGfhBPgnmDciF0hBgbKEzgH2Ag5AvMyGoNUbWZ1N/LT2n+Fw/eC9k9RmfVl1leZIFiCW6q4CHgBCHmtph/k50/X8EZAyAjXdXdhe+dCaKwt3bpSE9WQsjuCNcOBDHCLlVOR2+7QCrjkjzG55E+6/Bd97vFtGr2az//6dXT/3xdYI1KthOtW8pjDNiJP3uBWOepUdj2vuxW6P8U6Gfee/9egR3qiC+talURGGOrkfjoXKJg6u/T2SChx1u//I8OePzj4o6oddUlW5L1v0031XbdsGxPbCBO4SN4HzHtXdEtNHupSynHUu8XD4zoZcmHe4lWZ6oYcdK/AEiKNYOqIbcHerPqXbhVATfZuEvF8mWKg9bV60h9srMqrRhRLRzVAZA/umsDVqjHod5qQAcXy8Sl960VAMaVVXfa7DUgBdjA4uBdqRJDznwM3PnVifTmtipiauDo3ozPFEu4t7sFhVaCTZ6cuGLGS8yMCNyuMMUoMZ4Efc28pliq0qeIvg16n5k0zGJBzvkPcD6iDujX4dFOHN8A8xWhVvujJQyFs1dnJYvvntqbnhr2b/eA6RuX8t0IQ+BqwGZY0zDy3cEjzBCVUYX5+WCgf3Zu0uWbqZIF7UHkvhGjSHMfLBjByft4fq+/f9geWAtcmPP6LOv+tNBTCGJLzP8dywwxg/mNu5yMENNe0p/Q7oXtTDjYQM/4D5vl/hdCQvZf3JwEbBsP/LXE3kzcI1zIiS26UEcx/CuArMGneg9KTyN18I+i0wv95TJzIWP3hK+GWj/dwa+cOFwzAMUuRuGP8UCMM/wGGz/Leg1LqTGgYQUwkMsJ1q7vF0nHdqMeMcA+PLpf5zzCZ6HMnUZEhkRFSXo8FKMnpj7UWpADzv1A6GoYUFjwDUui1xHTq97uSlv9vEottlixuubwX991w/s9wK1MKzlQxoSbbddZazGUBW3ekQttRFOMDVhj/DWgsNflWhZRIZYShFQXf3KVT2qDuXdY5IWD+U/r0Zf4S2AAWdRlkT+rsxLSij9bCYCTUDMX8eOHVeYn/AUjUnWSV/ZlSbECr+WuGYhQvRJ+Pvv53XxyARV3CgkMYMhnBtGJPht5ErIby3wdnoqxFhwCZNzvjSQ0JqxVUQLN49LWyYw/6N3SshFi04OeCA74tWJMdVK48MQWG10Dx4z1nF9aMMBnmVVph6PnYBqwKwEH/XypkaRl2j9LsyboqKNZV7NTRZyu0olS6zirKzAhT/bOAZVqlSaU8F4UYez7C91qehVlaZbqMGa1inI+XYerALBIBfGH5GClHcsqZ7uOTaNLO+g4dbJOY+81Gr83Q6vEhth4yR9Stneas9E+qVmhRj1MLm9VibZbckyJrC2GxKh7Wa4OnE9nrraVxuNJCIPpRJfIsqaIN70+kLLnHhe0WQkSn6PcaJfhzv+RupdfGzREUzqUnDr0WAnm/meU8Ed2zs9TOXWcLIXb3NCzw4emxFeXBlbYxyw86FSataLyGxM34JO3cLG3jJEj3iwKmmNlb4J1/aSHwX8r565IemX6gEkYxAfjVdts4Ctl/ZbPcZH8eOVXOT4PMRgSY7S2Et+79/Q8lBbqyP1RP/wAAAABJRU5ErkJggg==" alt=""></div>
+            <div class="text-sm md:text-md text-[#42454a] font-bold">Ease: Quick & adjustable</div>
+        </div>
+    </div>
+</div>
+<div class="w-full  container px-4 py-5 flex justify-center items-center ">
+    <button class="px-10 py-4 lg:px-14 lg:text-xl bg-transparent border-2 border-[#4f5055] font-bold rounded-lg text-md text-[#43454a] ">More Accessories Coming Soon</button>
+</div>
+<div class="w-full flex flex-col container px-4 pt-14  ">
+    <div class="flex flex-col items-center  space-y-3 md:space-y-6">
+        <div class="text-2xl font-bold text-[#42454a] md:text-4xl">Gallery</div>
+        <div class="text-xs font-medium text-gray-400 md:text-lg  ">View gallery of our products and make yourself satisfied with our creation.</div>
+    </div>
+    <div class="flex flex-col items-center md:flex-row-reverse md:justify-between md:w-full md:pt-14 pt-5">
+        <div class="space-y-5 flex flex-col md:w-[50%] ">
+           <div class="relative  ">
+            <div><img class="" src="/assets/gallery built quality-a61cc584.png" alt=""></div>
+            <div class="absolute  top-0 pt-2 font-bold text-[#42454a] pl-6 text-lg md:text-xl  ">Build Quality</div>
+           </div>
+           <div class="relative flex flex-col  ">
+            <div><img class="" src="/assets/gallery parts-2a9ea2dd.png" alt=""></div>
+            <div class="absolute  top-0 pt-2 font-bold text-[#42454a] pl-6 text-lg md:text-xl  ">Parts</div>
+           </div>
+        </div>
+        <div class="pt-6 flex flex-col md:w-[40%] ">
+            <div>
+                <div class="relative  ">
+                    <div><img src="/assets/gallery scooter-2bdd1799.png" alt=""></div>
+                    <div class="absolute  top-0 pt-2 font-bold text-[#42454a] pl-6 text-lg md:text-xl ">Scooter</div>
+                   </div>
+            </div>
+            <div class="flex flex-col space-y-4 pt-6 md:pt-10 ">
+                <div><button class=" py-4 w-full bg-transparent border-2 border-[#4f5055] font-bold rounded-lg text-md text-[#43454a]">Battery Images</button>
+                </div>
+                <div>
+                    <button class="py-4 w-full  bg-transparent border-2 border-[#4f5055] font-bold rounded-lg text-md text-[#43454a]">Spare Parts Images</button>
+                </div>
+                <div>
+                    <button class="py-4 w-full  bg-transparent border-2 border-[#4f5055] font-bold rounded-lg text-md text-[#43454a]">Charging Cable images</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4 flex flex-col items-center py-14">
+    <div class="flex flex-col items-center gap-y-5">
+        <div class="text-3xl font-bold text-[#42454a]">Colors</div>
+        <div class="font-semibold text-[#42454a]">Checkout our product colors.</div>
+    </div>
+</div>
+<div class="pb-10"> 
+<div class="container px-4 lg:pb-40 md:pb-20  relative max-sm:bg-[#f0efeb]  ">
+    <div class=" bg-[#f0efeb]   ">
+        <div class="flex  justify-center pb-14">
+            <img src="/assets/gallery scooter-2bdd1799.png" alt="">
+        </div>
+    </div>
+    <div class="flex items-center justify-between bg-transparent absolute bottom-0   ">
+        <div class="relative  box-content ">
+            <div><img src="/assets/color-scooter-1-dc6985a8.png" alt=""></div>
+            <div class="absolute bottom-5 right-5  md:bottom-10 md:right-10  md:text-4xl lg:bottom-20 lg:right-14 lg:text-7xl font-bold z-20 text-white text-opacity-50 ">01</div>
+        </div>
+        <div class="relative  box-content ">
+            <div><img src="/assets/color-scooter-2-293a6a0d.png" alt=""></div>
+            <div class="absolute bottom-5 right-5 md:bottom-10 md:right-10 md:text-4xl lg:bottom-20 lg:right-16  lg:text-7xl font-bold z-20 text-white text-opacity-50 ">02</div>
+        </div>
+        <div class="relative  box-content ">
+            <div><img src="/assets/color-scooter-3-de3058e9.png" alt=""></div>
+            <div class="absolute bottom-5 right-5 md:bottom-10 md:right-10 md:text-4xl lg:bottom-20 lg:right-16  lg:text-7xl font-bold z-20 text-white text-opacity-50 ">03</div>
+        </div>
+        <div class="relative  box-content ">
+            <div><img src="/assets/color-scooter-4-84bfe048.png" alt=""></div>
+            <div class="absolute bottom-5 right-4 md:bottom-10 md:right-8 md:text-4xl lg:bottom-20 lg:right-12  lg:text-7xl font-bold z-20 text-white text-opacity-50 ">04</div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="flex flex-col items-center  container px-4 pt-10 bg-[#f0efeb] ">
+    <div class="text-3xl font-bold text-[#42454a] md:text-4xl ">Testimonials</div>
+    <div class="flex flex-col items-center pt-10 space-y-10 md:flex-row md:space-y-0 md:space-x-6 md:items-center">
+        <div class="flex flex-col items-center  justify-center px-7 py-10 bg-white rounded-md shadow-lg">
+            <div class="flex space-x-2 ">
+                <i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i>
+            </div>
+            <div class="flex flex-col items-center pb-10 pt-2">
+                <div>On the other hand,we denounce</div>
+                <div>with righteuos indination and</div>
+                <div>dislink men who are so beguiled</div>
+                <div>and demoralised by the charms</div>
+                <div>of pleasure</div>
+            </div>
+            <div class="flex space-x-3 items-center">
+                <img src="/assets/serhiy hipskyy-653b671d.png" alt="" >
+                <div>
+                    <div class="text-[#42454a] font-semibold">Serhly hipskyy</div>
+                    <div class="text-sm font-medium text-[#42454a]">CEO Universal</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center border-4 justify-center px-7 py-10 rounded-md ">
+            <div class="flex space-x-2">
+                <i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i>
+            </div>
+            <div class="flex flex-col items-center pb-10 pt-2">
+                <div>Nam libero tempore, cum soluta</div>
+                <div>nobis est eligendi optio cumque</div>
+                <div>nihil impedit quo minus id quod </div>
+                <div>maxime placeat facere possimus</div>
+                <div class="text-white">.</div>
+            </div>
+            <div class="flex space-x-3 items-center">
+                <img src="/assets/Justus Menke-43ba2afe.png" alt="">
+                <div>
+                    <div class="text-[#42454a] font-semibold">Justus Menke</div>
+                    <div class="text-sm font-medium text-[#42454a]">CEO Eronaman</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center border-4 justify-center px-7 py-10 rounded-md">
+            <div class="flex space-x-2 ">
+                <i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i><i class="fa-solid fa-star text-orange-500"></i>
+            </div>
+            <div class="flex flex-col items-center pb-10 pt-2">
+                <div>At vero eos et accusamus et</div>
+                <div>iusto odio dignissimos ducimus</div>
+                <div>qui blanditiis praesentium</div>
+                <div>voluptatum deleniti atque</div>
+                <div>corrupti quos dolores</div>
+            </div>
+            <div class="flex space-x-3 items-center">
+                <img src="/assets/Britain Eriksen-62971618.png" alt="" >
+                <div>
+                    <div class="text-[#42454a] font-semibold">Britain Eriksen</div>
+                    <div class="text-sm font-medium text-[#42454a]">CEO Universal</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex space-x-4 pt-10 pb-14 ">
+        <div class="w-10 h-10 rounded-full bg-transparent border-4 border-[#777a80] text-[#676b72] flex justify-center items-center font-semibold"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="w-10 h-10 rounded-full bg-[#42454a] text-white justify-center items-center flex font-semibold">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+</div>
+<div class="container px-4 flex flex-col items-center space-y-2 md:space-y-8 py-10 md:py-20 ">
+        <div class="flex flex-col items-center space-y-3 md:space-y-7 ">
+            <div class="text-2xl font-bold text-[#42454a] md:text-5xl ">Subscribe To Newsletter</div>
+            <div class="flex flex-col items-center md:flex-row">
+                <div class="font-medium text-[#42454a]">Subscribe to Our newsletter to get amazing</div>
+                 <div  class="font-medium text-[#42454a]">&nbsp;offer in future.</div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center space-y-3 w-full md:flex-row md:space-y-0 md:space-x-3 md:justify-center">
+            <div class="w-full md:w-[40%] placeholder-[#42454a] rounded-lg"><input class="shadow-lg bg-slate-100 pl-3 py-4 w-full" type="text" placeholder="Enter your email"></div>
+            <div class="w-full md:w-[20%]"><Button class=" bg-[#42454a] text-white w-full py-5 font-semibold rounded-lg">Get Start</Button></div>
+        </div>
+</div>
+<div class=" flex flex-col bg-[#42454a]  md:flex-row md:w-full md:justify-between">
+    <div class="flex flex-col items-center md:w-[40%] ">
+        <div class="">
+            <div class="md:w-full"><img  class="mb-5 md:w-full relative md:bottom-16 bottom-10" src="/assets/footer scooter-53ea70cd.png" alt=""></div>
+        </div>
+    </div>
+    <div class="flex flex-col pb-3 md:flex-row md:w-1/2 md:items-center max-md:px-4  ">
+        <div class="flex flex-col space-y-10 md:flex-row md:space-y-0 md:space-x-28">
+            <div class="flex flex-col space-y-5 md:space-y-12">
+                <div class=" text-white text-xl font-bold">About</div>
+                <div>
+                    <ul class="flex flex-col space-y-3 md:space-y-7 text-white font-medium">
+                        <li>Company</li>
+                        <li>Teams</li>
+                        <li>Profile</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-5 md:space-y-12">
+                <div class="text-white text-xl font-bold">Resources</div>
+                <div>
+                    <ul class="flex flex-col space-y-3 md:space-y-7 text-white font-medium">
+                        <li>Contact</li>
+                        <li>Application</li>
+                        <li>FQA Features</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-5  md:space-y-12">
+                <div class=" text-white text-xl font-bold">Legals</div>
+                <div>
+                    <ul class="flex flex-col space-y-3 md:space-y-7 text-white font-medium">
+                        <li>Copyright Privacy</li>
+                        <li>Policy Disclaimer</li>
+                        <li>Terms</li>
+                        <li class="flex space-x-2 md:space-x-4 text-2xl font-bold"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-square-twitter"></i><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col items-center container px-4 bg-[#42454a] border-none outline-none py-3">
+    <div class="text-white font-semibold"><i class="fa-regular fa-copyright"></i>Copyright 2021.All right reserved.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    background: linear-gradient(to right, #f5f2f2 58% , white 42%);
+}
+nav .list ul{
+    display: flex;
+    gap: 50px;
+}
+nav .list ul li{
+    list-style: none;
+}
+nav .list ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+nav .list ul li:nth-child(1) a{
+    color: orangered;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logoHead{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+.button button{
+    padding: 13px 30px ;
+    border: 2px solid black;
+    background: transparent;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.vector3{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(39, 180, 133, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.vector2{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 100, 10, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.vector1{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(137, 10, 255, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+section{
+    background: linear-gradient(to right, #f5f2f2 58% , white 42%);
+}
+@media only screen and (max-width: 848px) {
+    .list{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    section{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section .first{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    section .first .h1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    section .first .h2{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        font-size: 18px;
+        padding-left: 10px;
+        border-left: 2px solid gray;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: sans-serif;
+        z-index: 1;
+    }
+    nav{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+    .buttons button{
+        padding: 10px 20px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    .buttons div:nth-child(1) button{
+        background-color: orangered;
+        color: white;
+        border: none;
+    }
+    .buttons div:nth-child(2) button{
+        background-color: transparent;
+        color: black;
+        border: 2px solid black; 
+    }
+    .first{
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .arrow{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: .2;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+    .piche{
+        width: 100%;
+    }
+    .piche img{
+        width: 100%;
+    }
+    .main{
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+    }
+    .main img{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+    .pattern{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .pattern img{
+        width: 100%;
+    }
+    .green{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .circle{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+    .orange{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #262544;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .student1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        gap: 10px;
+    }
+    footer .student2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer .student3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer .student4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .tie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    .teacher{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .belt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 500;
+        color: rgb(182, 176, 176);
+        display: flex;
+        flex-direction: column;
+    }
+    .student2h1{
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        font-family: sans-serif;
+    }
+  }
+  @media (min-width: 848px) and (max-width: 2652px) {
+    .bars{
+        display: none;
+    }
+    .Profile{
+        display: none;
+    }
+    nav{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 80px;
+        padding-bottom: 100px;
+    }
+    .first{
+        width: 58%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 30px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .h2{
+        padding-left: 10px;
+        border-left: 2px solid gray;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .second{
+        width: 34%;
+        position: relative;
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+    .buttons button{
+        padding: 15px 30px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    .buttons div:nth-child(1) button{
+        background-color: orangered;
+        color: white;
+        border: none;
+    }
+    .buttons div:nth-child(2) button{
+        background-color: transparent;
+        color: black;
+        border: 2px solid black; 
+    }
+    .arrow{
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
+    .orange{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .piche{
+        width: 100%;
+    }
+    .piche img{
+        width: 80%;
+    }
+    .main{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 100%;
+    }
+    .main img{
+        width: 55%;
+    }
+    .pattern {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .pattern img{
+        width: 80%;
+    }
+    .green{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .circle{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+    footer{
+        background-color: #262544;
+        padding: 50px 80px;
+    }
+    .teacher{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .student1{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: white;
+    }
+    .student2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .student3{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .student4{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .belt{
+        display: flex;
+        flex-direction: column;
+        
+        font-weight: 500;
+        color: rgb(182, 176, 176);
+        display: flex;
+        flex-direction: column;
+    }
+    .tie{
+        display: flex;
+        flex-direction: column;
+       
+        gap: 5px;
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    .student2h1{
+        padding-top: 10px;
+        font-size: 17px;
+        font-weight: 700;
+        color: white;
+        font-family: sans-serif;
+    }
+}
